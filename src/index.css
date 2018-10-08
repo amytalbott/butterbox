@@ -12,3 +12,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header {
+  background-color: #E1CE7A;
+}
+
+.header, h1, p {
+  color: #424B54;
+}
+
+.navbar, li {
+  list-style-type: none;
+}
+.cart {
+  padding-left: 20px;
+}
+
+
+.availableItems {
+  padding-left: 40px;
+
+}
+.nameDisplay {
+  padding-right: 10px;
+}
+.addButton {
+  background-color: darkgrey;
+  color: white;
+  margin: 10px;
+}
+
+.removeButton {
+  background-color: darkgrey;
+  color: white;
+  margin: 10px;
+}
