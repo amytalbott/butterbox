@@ -1,26 +1,33 @@
 import React from 'react';
 
-// Hide Remove buttons on page load
-// Make Remove buttons appear once currentAmout >= 1
-// Set the minimum value of currentAmount to 0
+// This displays the amount of each item that's in the cart, and the add and remove
+// buttons. The remove button doesn't display until an item has been added to the
+// cart.
 
-window.onload = function() {
-  document.getElementById('remove-button').style.display = 'none';
+const Counter = props => {
+  let index = props.index;
+
+  return (
+    <div className="counter">
+      <span className="counter-score">Amount in cart: {props.currentAmount}</span>
+      <button
+        className="counter-action add"
+        onClick={() => props.changeAmount(index, 1)}
+      >
+        Add
+      </button>
+
+      {props.currentAmount > 0 ? (
+        <button
+          id="remove-button"
+          className="counter-action remove"
+          onClick={() => props.changeAmount(index, -1)}
+        >
+          Remove
+        </button>
+      ) : null}
+    </div>
+  );
 };
-
-
-const Counter = (props) => {
-
-    let index = props.index;
-
-    return (
-      <div className="counter">
-        <button className="counter-action add" onClick={() => props.changeAmount(index, 1)}> Add </button>
-        <span className="counter-score">{ props.currentAmount }</span>
-        <button id="remove-button" className="counter-action remove" onClick={() => props.changeAmount(index, -1)}> Remove </button>
-      </div>
-    );
-  }
-
 
 export default Counter;

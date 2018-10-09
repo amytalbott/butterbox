@@ -3,6 +3,8 @@ import React, {Component} from 'react';
 import Header from './Header';
 import Item from './Item';
 
+// Passes down changes in the state of each item
+
 class App extends React.Component {
   state = {
     items: [
@@ -39,6 +41,8 @@ class App extends React.Component {
     }));
   }
 
+  // renders all the components of the app
+
   render() {
     return (
       <div>
@@ -64,7 +68,6 @@ class App extends React.Component {
 
 }
 
-// Passes each item state down to TotalItems and TotalMoney
 
 
 export default App;

@@ -7,7 +7,7 @@ import { Jumbotron,
  } from 'react-bootstrap';
 
 
-// Stateless functional component:
+// Stateless functional component displaying the header, navbar, and intro text
 
 const Header = (props) => {
   return (

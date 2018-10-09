@@ -1,6 +1,8 @@
 import React from 'react';
 import App from './App';
 
+// This is the part in the navbar where changes in the number of items and
+// the total cost are reflected
 
 const Cart = (props) => {
   const inCart = props.items.reduce((total, item) => {
