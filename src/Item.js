@@ -7,9 +7,10 @@ import Counter from './Counter.js';
 const Item = (props) => {
   return (
     <div className="availableItems">
-      <span>
+      <img src={props.photo} alt="bread with butter on it"/>
+      <div>
         { props.name }: ${props.price}
-      </span>
+      </div>
       <Counter
         currentAmount={props.currentAmount}
         index={props.index}
