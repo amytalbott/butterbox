@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 import Header from './Header';
 import Item from './Item';
 import butterPlaceholder from './butterPlaceholder.jpg';
+import { Grid,
+  Row,
+ } from 'react-bootstrap';
 
 
 
@@ -57,18 +60,22 @@ class App extends React.Component {
         <Header
           items={this.state.items}
         />
-        {/* Available items list */}
-        {this.state.items.map( (item, index) =>
-          <Item
-            photo={item.photo}
-            name={item.name}
-            price={item.price}
-            index={index}
-            changeAmount={this.handleItemChange}
-            currentAmount={item.currentAmount}
-          />
-        )
-        }
+        <Grid>
+          <Row className="show-grid">
+            {/* Available items list */}
+            {this.state.items.map( (item, index) =>
+              <Item
+                photo={item.photo}
+                name={item.name}
+                price={item.price}
+                index={index}
+                changeAmount={this.handleItemChange}
+                currentAmount={item.currentAmount}
+              />
+            )
+            }
+          </Row>
+        </Grid>
 
       </div>
     );

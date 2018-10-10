@@ -10,22 +10,24 @@ const Counter = props => {
   return (
     <div className="counter">
       <span className="counter-score">Amount in cart: {props.currentAmount}</span>
-      <button
-        className="counter-action add"
-        onClick={() => props.changeAmount(index, 1)}
-      >
-        Add
-      </button>
-
-      {props.currentAmount > 0 ? (
+      <div>
         <button
-          id="remove-button"
-          className="counter-action remove"
-          onClick={() => props.changeAmount(index, -1)}
+          className="counter-action add"
+          onClick={() => props.changeAmount(index, 1)}
         >
-          Remove
+          Add
         </button>
-      ) : null}
+
+        {props.currentAmount > 0 ? (
+          <button
+            id="remove-button"
+            className="counter-action remove"
+            onClick={() => props.changeAmount(index, -1)}
+          >
+            Remove
+          </button>
+        ) : null}
+      </div>
     </div>
   );
 };
