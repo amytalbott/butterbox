@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 // import './App.css';
 import Header from './Header';
 import Item from './Item';
+import butterPlaceholder from './butterPlaceholder.jpg';
+
+
 
 // Passes down changes in the state of each item
 
@@ -9,28 +12,28 @@ class App extends React.Component {
   state = {
     items: [
       {
-        photo: "./img/butter-placeholder.jpg",
+        photo: {butterPlaceholder},
         name: "One-year subscription",
         price: 80,
         currentAmount: 0,
         index: 1
       },
       {
-        photo: "./img/butter-placeholder.jpg",
+        photo: {butterPlaceholder},
         name: "Six-month subscription",
         price: 40,
         currentAmount: 0,
         index: 2
       },
       {
-        photo: "./img/butter-placeholder.jpg",
+        photo: {butterPlaceholder},
         name: "Butter sampler",
         price: 30,
         currentAmount: 0,
         index: 3
       },
       {
-        photo: "./img/butter-placeholder.jpg",
+        photo: {butterPlaceholder},
         name: "Mystery flavor",
         price: 10,
         currentAmount: 0,
