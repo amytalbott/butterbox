@@ -10,9 +10,9 @@ const Item = (props) => {
   return (
 
         <Col xs={12} md={6} lg={3}>
-          <div className="availableItems">
-            <img src={props.photo} alt="bread with butter on it" responsive />
-            <div>
+          <div className="availableItems text-center">
+            <img className="productPhoto" src={props.photo} alt="bread with butter on it" />
+            <div className="">
               { props.name }: ${props.price}
             </div>
             <Counter

@@ -15,28 +15,28 @@ class App extends React.Component {
   state = {
     items: [
       {
-        photo: {butterPlaceholder},
+        photo: butterPlaceholder,
         name: "One-year subscription",
         price: 80,
         currentAmount: 0,
         index: 1
       },
       {
-        photo: {butterPlaceholder},
+        photo: butterPlaceholder,
         name: "Six-month subscription",
         price: 40,
         currentAmount: 0,
         index: 2
       },
       {
-        photo: {butterPlaceholder},
+        photo: butterPlaceholder,
         name: "Butter sampler",
         price: 30,
         currentAmount: 0,
         index: 3
       },
       {
-        photo: {butterPlaceholder},
+        photo: butterPlaceholder,
         name: "Mystery flavor",
         price: 10,
         currentAmount: 0,
@@ -64,7 +64,7 @@ class App extends React.Component {
           <Row className="show-grid">
             {/* Available items list */}
             {this.state.items.map( (item, index) =>
-              <Item
+              <Item className="itemForSale"
                 photo={item.photo}
                 name={item.name}
                 price={item.price}

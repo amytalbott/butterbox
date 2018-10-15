@@ -15,6 +15,7 @@ code {
 
 .header {
   background-color: #E1CE7A;
+  border-radius: none;
 }
 
 .header, h1, p {
@@ -24,26 +25,36 @@ code {
 .navbar, li {
   list-style-type: none;
 }
+button.navbar-toggle {
+  background-color: red;
+}
 .cart {
   padding-left: 20px;
 }
 
-
 .availableItems {
-  padding-left: 40px;
-
+  border: 1px solid #424B54;
+  margin: 5px 0;
 }
+
+.productPhoto{
+  width: 90%;
+  outline: 1px solid lightgrey;
+  outline-offset: 3px;
+  margin: 10px 0;
+}
+
 .nameDisplay {
   padding-right: 10px;
 }
 .addButton {
-  background-color: darkgrey;
+  background-color: #424B54;
   color: white;
-  margin: 10px;
+  margin: 10px 5px;
 }
 
 .removeButton {
-  background-color: darkgrey;
+  background-color: #424B54;
   color: white;
-  margin: 10px;
+  margin: 10px 5px;
 }

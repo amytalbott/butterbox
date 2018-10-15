@@ -12,7 +12,7 @@ const Counter = props => {
       <span className="counter-score">Amount in cart: {props.currentAmount}</span>
       <div>
         <button
-          className="counter-action add"
+          className="counter-action addButton"
           onClick={() => props.changeAmount(index, 1)}
         >
           Add
@@ -20,8 +20,7 @@ const Counter = props => {
 
         {props.currentAmount > 0 ? (
           <button
-            id="remove-button"
-            className="counter-action remove"
+            className="counter-action removeButton"
             onClick={() => props.changeAmount(index, -1)}
           >
             Remove
