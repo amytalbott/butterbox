@@ -1,12 +1,18 @@
 import React from 'react';
-import Cart from './Cart';
-
 import { Jumbotron,
-  Nav,
-  Navbar,
-  NavItem,
-  MenuItem
  } from 'react-bootstrap';
+
+ import {
+  BrowserRouter as Router, Route, NavLink
+} from 'react-router-dom';
+
+// Import comonents:
+import Cart from './Cart';
+import ButterBlog from './NavComponents/ButterBlog';
+import About from './NavComponents/About';
+import Contact from './NavComponents/Contact';
+
+
 
 
 // Stateless functional component displaying the header, navbar, and intro text
@@ -14,54 +20,34 @@ import { Jumbotron,
 const Header = (props) => {
   return (
     <div>
-      <Jumbotron className="header text-center">
-        <h1>ButterBox</h1>
-        <p>
-          Butter of the Month Club
-        </p>
-        <Navbar>
-          {/* I want to figure out how to make this part responsive.
-            It should collapse and a toggle button should appear. */}
-            <NavItem>
-              About Us
-            </NavItem>
-            <NavItem>
-              ButterBlog
-            </NavItem>
-            <NavItem>
-              FAQ
-            </NavItem>
-            <NavItem>
-              Contact
-            </NavItem>
-            {/* This part doesn't collapse with the rest of the menu.
-            It stays off to the right. */}
-          <Nav pullRight>
-            <NavItem>
-              <Cart items={props.items}/>
-            </NavItem>
-          </Nav>
-        </Navbar>
-        {/* <Navbar>
-          <NavItem>
-            About Us
-          </NavItem>
-          <NavItem>
-            ButterBlog
-          </NavItem>
-          <NavItem>
-            FAQ
-          </NavItem>
-          <NavItem>
-            Contact
-          </NavItem>
-          <NavItem>
-            <Cart items={props.items}/>
-          </NavItem>
-        </Navbar> */}
+      <Jumbotron className="header">
+        <h1 className="siteTitle text-center">ButterBox</h1>
+        <Router>
+            <div className="header-nav">
+             <ul className="main-nav">
+                <li>
+                  <NavLink to="/butterblog">ButterBlog</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about">About us</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact">Contact</NavLink>
+                </li>
+              </ul>
+
+                {/* <Route path="/" component={App} /> */}
+                <Route path="/butterblog" component={ButterBlog} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+                {/* <Route component={NotFound}/> */}
+                <Cart items={props.items} className="shoppingCart"/>
+            </div>
+        </Router>
+
+
       </Jumbotron>
-      <p className="introParagraph text-center">Subscribe and receive a surprising, seasonally-flavored pound of butter each month.
-      Get one for yourself, or buy a gift subscription for a friend.</p>
+
     </div>
   );
 }

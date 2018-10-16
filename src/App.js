@@ -1,12 +1,14 @@
+
 import React, {Component} from 'react';
 // import './App.css';
 import Header from './Header';
 import Item from './Item';
+
+
 import butterPlaceholder from './butterPlaceholder.jpg';
 import { Grid,
   Row,
  } from 'react-bootstrap';
-
 
 
 // Passes down changes in the state of each item
@@ -60,6 +62,9 @@ class App extends React.Component {
         <Header
           items={this.state.items}
         />
+
+        <p className="introParagraph text-center"> Subscribe to our butter of the month club, or try one of our
+          a la carte butter offerings.</p>
         <Grid>
           <Row className="show-grid">
             {/* Available items list */}

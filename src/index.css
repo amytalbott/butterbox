@@ -13,25 +13,51 @@ code {
     monospace;
 }
 
+/* Styles for  */
+
 .header {
   background-color: #E1CE7A;
   border-radius: none;
 }
 
-.header, h1, p {
+h1 {
   color: #424B54;
+  font-family: 'Rammetto One', sans-serif;
+  font-size: 4em;
+
 }
 
-.navbar, li {
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #424B54;
+
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-nav li {
   list-style-type: none;
-}
-button.navbar-toggle {
-  background-color: red;
-}
-.cart {
-  padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
+.main-nav a {
+  color: white;
+}
+
+.totalItems{
+  color: white;
+}
+
+.money {
+  color: white;
+}
 .availableItems {
   border: 1px solid #424B54;
   margin: 5px 0;
