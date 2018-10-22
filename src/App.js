@@ -1,14 +1,17 @@
-
 import React, {Component} from 'react';
-// import './App.css';
+import {BrowserRouter, Route} from 'react-router-dom';
 import Header from './Header';
-import Item from './Item';
+// import Item from './Item';
+import Home from './Home';
+import ButterBlog from './ButterBlog';
+import About from './About';
+import Contact from './Contact';
 
 
 import butterPlaceholder from './butterPlaceholder.jpg';
-import { Grid,
-  Row,
- } from 'react-bootstrap';
+// import { Grid,
+//   Row,
+//  } from 'react-bootstrap';
 
 
 // Passes down changes in the state of each item
@@ -52,37 +55,26 @@ class App extends React.Component {
       currentAmount: prevState.items[index].currentAmount += delta
     }));
   }
-
   // renders all the components of the app
 
   render() {
     return (
-      <div>
-        {/* These are JSX tags */}
-        <Header
-          items={this.state.items}
-        />
+      <BrowserRouter>
+        <div className="app">
+          {/* These are JSX tags */}
+          <Header
+            items={this.state.items}
+          />
 
-        <p className="introParagraph text-center"> Subscribe to our butter of the month club, or try one of our
-          a la carte butter offerings.</p>
-        <Grid>
-          <Row className="show-grid">
-            {/* Available items list */}
-            {this.state.items.map( (item, index) =>
-              <Item className="itemForSale"
-                photo={item.photo}
-                name={item.name}
-                price={item.price}
-                index={index}
-                changeAmount={this.handleItemChange}
-                currentAmount={item.currentAmount}
-              />
-            )
-            }
-          </Row>
-        </Grid>
+          <div className="routeContainer">
+            <Route exact path="/" component={Home} />
+            <Route path="/butterblog" component={ButterBlog} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+          </div>
 
-      </div>
+        </div>
+      </BrowserRouter>
     );
   }
 

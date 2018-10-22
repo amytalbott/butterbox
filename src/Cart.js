@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import App from './App';
+import Home from './Home';
 
 // This is the part in the navbar where changes in the number of items and
 // the total cost are reflected

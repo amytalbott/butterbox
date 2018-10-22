@@ -15,15 +15,24 @@ code {
 
 /* Styles for  */
 
+.jumbotron {
+    border-radius: none;
+}
+
 .header {
   background-color: #E1CE7A;
-  border-radius: none;
+
 }
 
 h1 {
   color: #424B54;
   font-family: 'Rammetto One', sans-serif;
   font-size: 4em;
+
+}
+
+.siteTitle a {
+  color: #424B54;
 
 }
 
@@ -49,6 +58,7 @@ h1 {
 
 .main-nav a {
   color: white;
+
 }
 
 .totalItems{
