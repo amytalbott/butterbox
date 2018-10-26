@@ -49,7 +49,7 @@ import { Grid,
    render() {
      return (
        <div className="homeContainer">
-         <p className="introParagraph text-center"> Subscribe to our butter of the month club, or try one of our
+         <p className="introParagraph text-center">Subscribe to our butter of the month club, or try one of our
            a la carte butter offerings.</p>
          <Grid>
            <Row className="show-grid">

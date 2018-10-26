@@ -10,7 +10,7 @@ class ButterBlog extends React.Component {
   }
   }
   componentDidMount() {
-  let dataURL = "http://localhost/butterblog.dev/wp-json/wp/v2/posts?_embed";
+  let dataURL = "http://localhost/butterblog.dev/wp-json/wp/v2/posts";
   fetch(dataURL)
     .then(res => res.json())
     .then(res => {
@@ -23,13 +23,15 @@ class ButterBlog extends React.Component {
   let posts = this.state.posts.map((post, index) => {
     return <div key={index}>
     <h3>{post.title.rendered}</h3>
-    {post.content.rendered}
+    <div dangerouslySetInnerHTML={{__html: post.content.rendered}} />
     </div>
   });
   return (
-    <div>
-      <h2>ButterBlog</h2>
-      {posts}
+    <div className="butterblog">
+      <h2 className="blogheader text-center">ButterBlog</h2>
+      <div className="butterposts">
+        {posts}
+      </div>
     </div>
   )
   }

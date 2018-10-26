@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-/* Styles for  */
+/* Styles for header */
 
 .jumbotron {
     border-radius: none;
@@ -68,6 +68,9 @@ h1 {
 .money {
   color: white;
 }
+
+/* Styles for product display home page */
+
 .availableItems {
   border: 1px solid #424B54;
   margin: 5px 0;
@@ -93,4 +96,15 @@ h1 {
   background-color: #424B54;
   color: white;
   margin: 10px 5px;
+}
+
+/* Styles for ButterBlog */
+
+.blogheader{
+  color: #424B54;
+}
+
+.butterposts {
+  margin: 2% 5%;
+  color: #424B54;
 }

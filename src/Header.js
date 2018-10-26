@@ -17,23 +17,24 @@ const Header = (props) => {
           <NavLink to="/">ButterBox</NavLink>
         </h1>
         <div className="header-nav">
-         <ul className="main-nav">
-            <li>
-              <NavLink to="/butterblog">ButterBlog</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-          </ul>
-          <Cart items={props.items} className="shoppingCart"/>
-        </div>
-      </Jumbotron>
 
-    </div>
-  );
-}
+              <ul className="main-nav">
+                <li>
+                  <NavLink to="/butterblog">ButterBlog</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about">About us</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact">Contact</NavLink>
+                </li>
+              </ul>
+              <Cart items={props.items} className="shoppingCart" />
+            </div>
+          </Jumbotron>
+
+        </div>
+      );
+    }
 
 export default Header;
