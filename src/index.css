@@ -15,30 +15,33 @@ code {
 
 /* Styles for header */
 
-.jumbotron {
+Jumbotron {
     border-radius: none;
 }
 
 .header {
   background-color: #E1CE7A;
+  border-radius: none;
 
 }
 
-h1 {
+.siteTitle {
   color: #424B54;
   font-family: 'Rammetto One', sans-serif;
-  font-size: 4em;
-
 }
 
 .siteTitle a {
   color: #424B54;
-
+  text-decoration: none;
 }
+
+/* Styles for navbar */
 
 .header-nav {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   background-color: #424B54;
 
 }
@@ -46,7 +49,11 @@ h1 {
 .main-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+}
+
+.main-nav ul {
+  margin-top: none !important;
+  margin-bottom: none !important;
 }
 
 .main-nav li {
@@ -61,8 +68,18 @@ h1 {
 
 }
 
+.main-nav .icon {
+    display: none;
+}
+
+/* Styles for cart */
+.cart {
+  margin-right: 20px;
+}
+
 .totalItems{
   color: white;
+
 }
 
 .money {
@@ -107,4 +124,74 @@ h1 {
 .butterposts {
   margin: 2% 5%;
   color: #424B54;
+}
+
+.butterpost {
+  background-color: #F5F5F5;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: 1px solid #424B54;
+  outline-offset: 3px;
+}
+
+/* Styles for contact page */
+
+.contactHeader {
+  color: #424B54;
+}
+
+.contactForm {
+  width: 80%;
+  margin: auto;
+}
+
+.contactSubmit {
+  background-color: #424B54;
+  border-color: #6c757d;
+}
+
+/* Styles for about page
+  Image needs to be resized
+*/
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutHeader {
+  color: #424B54;
+}
+
+.aboutPhoto {
+
+}
+
+/* Media queries */
+/* Makes the site title larger on larger screens */
+@media only screen and (min-width: 700px) {
+  .siteTitle {
+    font-size: 4em;
+  }
+}
+/*  Hides menu options and displays the hamburger menu icon on smaller screens */
+@media screen and (max-width: 500px) {
+  .main-nav a:not(.icon) {display: none;}
+  .main-nav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .main-nav.responsive {position: relative;}
+  .main-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
 }

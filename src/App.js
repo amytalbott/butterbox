@@ -17,6 +17,7 @@ import butterPlaceholder from './butterPlaceholder.jpg';
 // Passes down changes in the state of each item
 
 class App extends React.Component {
+  // assigns props to all the items that appear in Home.js
   state = {
     items: [
       {
@@ -61,13 +62,16 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div className="app">
-          {/* These are JSX tags */}
           <Header
             items={this.state.items}
           />
 
           <div className="routeContainer">
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" render={(props) => <Home
+              {...props}
+              items={this.state.items}
+              handleItemChange={this.handleItemChange} />}
+            />
             <Route path="/butterblog" component={ButterBlog} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />

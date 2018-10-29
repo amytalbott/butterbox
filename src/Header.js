@@ -17,8 +17,14 @@ const Header = (props) => {
           <NavLink to="/">ButterBox</NavLink>
         </h1>
         <div className="header-nav">
-
-              <ul className="main-nav">
+              <ul className="main-nav" id="myTopnav">
+                {/* Menu icon that appears on smaller screens */}
+                <li>
+                  <a href="javascript:void(0);" className="icon">
+                     <i className="fa fa-bars"></i>
+                   </a>
+                </li>
+                {/* Menu options that appear on larger screens */}
                 <li>
                   <NavLink to="/butterblog">ButterBlog</NavLink>
                 </li>
@@ -29,6 +35,7 @@ const Header = (props) => {
                   <NavLink to="/contact">Contact</NavLink>
                 </li>
               </ul>
+              {/* Items in cart and Total. Appears on the top left */}
               <Cart items={props.items} className="shoppingCart" />
             </div>
           </Jumbotron>

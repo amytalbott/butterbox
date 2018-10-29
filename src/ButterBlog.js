@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import { Button } from 'reactstrap';
 
+// Displays posts from a WordPress site using the WordPress API
 
 class ButterBlog extends React.Component {
 
@@ -9,6 +11,7 @@ class ButterBlog extends React.Component {
     posts: []
   }
   }
+  // the following is pulling in data from a WordPress blog
   componentDidMount() {
   let dataURL = "http://localhost/butterblog.dev/wp-json/wp/v2/posts";
   fetch(dataURL)
@@ -19,11 +22,14 @@ class ButterBlog extends React.Component {
       })
     })
   }
+  // This tells the app to display the title and content of the post, plus a
+  // more button for each post. Currently, the button is non-functional
   render() {
   let posts = this.state.posts.map((post, index) => {
-    return <div key={index}>
+    return <div className="butterpost" key={index}>
     <h3>{post.title.rendered}</h3>
     <div dangerouslySetInnerHTML={{__html: post.content.rendered}} />
+    <Button>Read more</Button>
     </div>
   });
   return (
