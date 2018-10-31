@@ -13,7 +13,8 @@ class ButterBlog extends React.Component {
   }
   // the following is pulling in data from a WordPress blog
   componentDidMount() {
-  let dataURL = "http://localhost/butterblog.dev/wp-json/wp/v2/posts";
+  // let dataURL = "http://localhost/butterblog.dev/wp-json/wp/v2/posts";
+  let dataURL = "http://35.225.190.122/index.php/wp-json/wp/v2/posts";
   fetch(dataURL)
     .then(res => res.json())
     .then(res => {

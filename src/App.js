@@ -7,11 +7,12 @@ import ButterBlog from './ButterBlog';
 import About from './About';
 import Contact from './Contact';
 
+// import images
+import year from './img/year.jpeg';
+import six from './img/six.jpeg';
+import sample from './img/sample.jpeg';
+import mystery from './img/mystery.jpeg';
 
-import butterPlaceholder from './butterPlaceholder.jpg';
-// import { Grid,
-//   Row,
-//  } from 'react-bootstrap';
 
 
 // Passes down changes in the state of each item
@@ -21,28 +22,28 @@ class App extends React.Component {
   state = {
     items: [
       {
-        photo: butterPlaceholder,
+        photo: year,
         name: "One-year subscription",
         price: 80,
         currentAmount: 0,
         index: 1
       },
       {
-        photo: butterPlaceholder,
+        photo: six,
         name: "Six-month subscription",
         price: 40,
         currentAmount: 0,
         index: 2
       },
       {
-        photo: butterPlaceholder,
+        photo: sample,
         name: "Butter sampler",
         price: 30,
         currentAmount: 0,
         index: 3
       },
       {
-        photo: butterPlaceholder,
+        photo: mystery,
         name: "Mystery flavor",
         price: 10,
         currentAmount: 0,
