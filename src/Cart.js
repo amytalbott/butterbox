@@ -1,10 +1,7 @@
-
-
 import React from 'react';
-import Home from './Home';
 
-// This is the part in the navbar where changes in the number of items and
-// the total cost are reflected
+// Part in the navbar that reflects changes in the number of items and
+// the total cost 
 
 const Cart = (props) => {
   const inCart = props.items.reduce((total, item) => {

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
+
+// import components
 import Header from './Header';
-// import Item from './Item';
 import Home from './Home';
 import ButterBlog from './ButterBlog';
 import About from './About';
@@ -12,10 +13,6 @@ import year from './img/year.jpeg';
 import six from './img/six.jpeg';
 import sample from './img/sample.jpeg';
 import mystery from './img/mystery.jpeg';
-
-
-
-// Passes down changes in the state of each item
 
 class App extends React.Component {
   // assigns props to all the items that appear in Home.js
@@ -52,39 +49,35 @@ class App extends React.Component {
     ]
   }
 
+// tracks when items are added or removed from the cart
+
   handleItemChange = (index, delta) => {
     this.setState( prevState => ({
       currentAmount: prevState.items[index].currentAmount += delta
     }));
   }
-  // renders all the components of the app
 
   render() {
     return (
       <BrowserRouter>
         <div className="app">
-          <Header
-            items={this.state.items}
-          />
+          <Header items={this.state.items} />
 
           <div className="routeContainer">
-            <Route exact path="/" render={(props) => <Home
-              {...props}
-              items={this.state.items}
-              handleItemChange={this.handleItemChange} />}
+            <Route exact path="/" render={(props) =>
+              <Home
+                {...props}
+                items={this.state.items}
+                handleItemChange={this.handleItemChange} />}
             />
             <Route path="/butterblog" component={ButterBlog} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
           </div>
-
         </div>
       </BrowserRouter>
     );
   }
-
 }
-
-
 
 export default App;

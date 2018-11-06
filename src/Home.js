@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
-import Item from './Item';
-
-import butterPlaceholder from './butterPlaceholder.jpg';
 import { Grid,
   Row,
  } from 'react-bootstrap';
+
+//import components
+import Item from './Item';
+
 
 // displays all the items for sale
 

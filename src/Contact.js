@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import Header from './Header';
 
 // Contact form for ButterBox. When form is submitted, the user is notified
-// via an alert box. 
+// via an alert box.
 
 class Contact extends React.Component {
   constructor(props) {
@@ -24,19 +23,19 @@ class Contact extends React.Component {
           <p>Do you have questions, or feedback about our products? Let us know!</p>
         </div>
         <Form className="contactForm"onSubmit={this.handleSubmit}>
-            <FormGroup>
-              <Label>Name:</Label>
-              <Input type="text" />
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleEmail">Email:</Label>
-              <Input type="email" name="email" id="exampleEmail" />
-            </FormGroup>
-            <FormGroup>
-             <Label for="exampleText">Enter your question or comment here:</Label>
-             <Input type="textarea" name="text" id="exampleText" />
-           </FormGroup>
-           <Button className="contactSubmit" type="submit" value="Submit">Submit</Button>
+          <FormGroup>
+            <Label>Name:</Label>
+            <Input type="text" />
+          </FormGroup>
+          <FormGroup>
+            <Label for="exampleEmail">Email:</Label>
+            <Input type="email" name="email" id="exampleEmail" />
+          </FormGroup>
+          <FormGroup>
+           <Label for="exampleText">Enter your question or comment here:</Label>
+           <Input type="textarea" name="text" id="exampleText" />
+         </FormGroup>
+         <Button className="contactSubmit" type="submit" value="Submit">Submit</Button>
         </Form>
       </div>
     );

@@ -1,7 +1,8 @@
 import React from 'react';
-import Counter from './Counter.js';
 import {Col} from 'react-bootstrap';
 
+// import component
+import Counter from './Counter.js';
 
 // Displays each item, along with price, current amount in cart, and add/remove
 // buttons

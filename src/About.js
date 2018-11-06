@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
 
+// import image
 import about from './img/about.jpeg';
 
 // Information about the ButterBox team

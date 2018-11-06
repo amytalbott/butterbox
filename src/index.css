@@ -35,6 +35,13 @@ Jumbotron {
   text-decoration: none;
 }
 
+.fa {
+  /* Styles for hamburger menu icon */
+  background-color: white;
+  color: #424B54;
+}
+
+
 /* Styles for navbar */
 
 .header-nav {
@@ -150,9 +157,7 @@ Jumbotron {
   border-color: #6c757d;
 }
 
-/* Styles for about page
-  Image needs to be resized
-*/
+/* Styles for about page */
 
 .aboutContainer {
   display: flex;
