@@ -8,7 +8,6 @@ import Counter from './Counter.js';
 // buttons
 
 const Item = (props) => {
-  let index = props.index;
   return (
 
         <Col xs={12} md={6} lg={3}>

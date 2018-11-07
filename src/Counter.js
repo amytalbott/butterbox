@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-// This displays the amount of each item that's in the cart, and the add and remove
+
+// Displays the amount of each item that's in the cart, and the add and remove
 // buttons. The remove button doesn't display until an item has been added to the
 // cart.
 

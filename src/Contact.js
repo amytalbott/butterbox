@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import React from 'react';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 // Contact form for ButterBox. When form is submitted, the user is notified
 // via an alert box.

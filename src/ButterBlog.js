@@ -1,6 +1,8 @@
-import React, {Component} from 'react';
-import { Button } from 'reactstrap';
-import {BrowserRouter, Route, NavLink} from 'react-router-dom';
+import React from 'react';
+
+
+// import components
+import ReadMore from './ReadMore';
 
 // Displays posts from a WordPress site using the WordPress API
 
@@ -30,13 +32,15 @@ class ButterBlog extends React.Component {
       return <div className="butterpost" key={index}>
       <h3>{post.title.rendered}</h3>
       <div dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
-      <Button onClick={{__html: post.content.rendered}}>Read more</Button>
+      <ReadMore
+        posts={this.state.posts}
+      />
       </div>
     });
 
     return (
       <div className="butterblog">
-        <h2 className="blogheader text-center">ButterBlog</h2>
+        <h2 className="blogheader text-center">ButterBlog: the official blog of ButterBox</h2>
         <div className="butterposts">
           {posts}
         </div>
