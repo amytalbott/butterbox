@@ -19,20 +19,20 @@ class Contact extends React.Component {
     return (
       <div>
         <div className="contactHeader text-center">
-          <h2>Contact us</h2>
-          <p>Do you have questions, or feedback about our products? Let us know!</p>
+          <h2 className="header-font">Contact us</h2>
+          <p className="contact-text">Do you have questions, or feedback about our products? Let us know!</p>
         </div>
         <Form className="contactForm"onSubmit={this.handleSubmit}>
           <FormGroup>
-            <Label>Name:</Label>
+            <Label className="contact-text">Name:</Label>
             <Input type="text" />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleEmail">Email:</Label>
+            <Label className="contact-text" for="exampleEmail">Email:</Label>
             <Input type="email" name="email" id="exampleEmail" />
           </FormGroup>
           <FormGroup>
-           <Label for="exampleText">Enter your question or comment here:</Label>
+           <Label className="contact-text" for="exampleText">Enter your question or comment here:</Label>
            <Input type="textarea" name="text" id="exampleText" />
          </FormGroup>
          <Button className="contactSubmit" type="submit" value="Submit">Submit</Button>

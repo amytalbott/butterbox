@@ -13,21 +13,26 @@ code {
     monospace;
 }
 
-/* Styles for header */
+/* Font styles */
 
-Jumbotron {
-    border-radius: none;
+.header-font {
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: bold;
+  color: #424B54;
 }
 
+/* Styles for header */
+
 .header {
-  background-color: #E1CE7A;
-  border-radius: none;
+  background-color: #ffffb3;
+  margin-bottom: 20px;
 
 }
 
 .siteTitle {
   color: #424B54;
   font-family: 'Rammetto One', sans-serif;
+  padding: 20px;
 }
 
 .siteTitle a {
@@ -50,6 +55,7 @@ Jumbotron {
   align-items: center;
   justify-content: space-between;
   background-color: #424B54;
+
 
 }
 
@@ -85,15 +91,22 @@ Jumbotron {
 }
 
 .totalItems{
+  font-family: 'IBM Plex Serif', serif;
   color: white;
 
 }
 
 .money {
+  font-family: 'IBM Plex Serif', serif;
   color: white;
 }
 
 /* Styles for product display home page */
+
+.introParagraph {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .availableItems {
   border: 1px solid #424B54;
@@ -107,30 +120,64 @@ Jumbotron {
   margin: 10px 0;
 }
 
+.item-heading {
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: bold;
+  color: #424B54;
+  padding: 12px;
+}
+
+.item-amount {
+  font-family: 'IBM Plex Serif', serif;
+  color: #424B54;
+}
+
 .nameDisplay {
   padding-right: 10px;
 }
+
+.detail-button {
+  font-family: 'Permanent Marker', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: .5px .5px grey;
+  background-color: #8f9779;
+  border-radius: 0px;
+  border: none;
+  width: 90%;
+}
+
+.detail-button:hover{
+  background-color: #4d5d53;
+}
+
 .addButton {
-  background-color: #424B54;
+  font-family: 'Permanent Marker', sans-serif;
+  letter-spacing: 1px;
+  background-color: #00284d;
   color: white;
   margin: 10px 5px;
+  border-radius: 0px;
+  border: none;
+  width: 40%;
 }
 
 .removeButton {
+  font-family: 'Permanent Marker', sans-serif;
+  letter-spacing: 1px;
   background-color: #424B54;
   color: white;
   margin: 10px 5px;
+  border-radius: 0px;
+  border: none;
+  width: 40%;
 }
 
 /* Styles for ButterBlog */
 
-.blogheader{
-  color: #424B54;
-}
-
 .butterposts {
   margin: 2% 5%;
   color: #424B54;
+  font-family: 'IBM Plex Serif', serif;
 }
 
 .butterpost {
@@ -141,34 +188,61 @@ Jumbotron {
   outline-offset: 3px;
 }
 
-/* Styles for contact page */
-
-.contactHeader {
-  color: #424B54;
+.read-more-button {
+  font-family: 'Permanent Marker', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: .5px .5px grey;
+  background-color: #8f9779;
+  border-radius: 0px;
+  border: none;
 }
+
+.read-more-button:hover{
+  background-color: #4d5d53;
+}
+
+/* Styles for contact page */
 
 .contactForm {
   width: 80%;
   margin: auto;
 }
 
-.contactSubmit {
-  background-color: #424B54;
-  border-color: #6c757d;
+.contact-text {
+  font-family: 'IBM Plex Serif', serif;
 }
 
-/* Styles for about page */
+.contactSubmit {
+  font-family: 'Permanent Marker', sans-serif;
+  letter-spacing: 1px;
+  background-color: #00284d;
+  color: white;
+  margin: 10px 5px;
+  border-radius: 0px;
+  border: none;
+}
 
+
+/* Styles for about page */
 .aboutContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.aboutHeader {
-  color: #424B54;
+.aboutPhoto {
+  max-width: 90%;
+  margin: auto;
+  outline: 1px solid lightgrey;
+  outline-offset: 3px;
 }
 
-
+.aboutText {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  font-family: 'IBM Plex Serif', serif;
+}
 
 /* Media queries */
 /* Makes the site title larger on larger screens */

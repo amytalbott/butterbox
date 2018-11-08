@@ -1,8 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import { Jumbotron,
- } from 'react-bootstrap';
- 
+
+
 // Import components:
 import Cart from './Cart';
 
@@ -11,8 +10,7 @@ import Cart from './Cart';
 
 const Header = (props) => {
   return (
-    <div>
-      <Jumbotron className="header">
+    <div className="header">
         <h1 className="siteTitle text-center">
           <NavLink to="/">ButterBox</NavLink>
         </h1>
@@ -26,20 +24,18 @@ const Header = (props) => {
               </li>
               {/* Menu options that appear on larger screens */}
               <li>
-                <NavLink to="/butterblog">ButterBlog</NavLink>
+                <NavLink to="/butterblog" className="header-font">ButterBlog</NavLink>
               </li>
               <li>
-                <NavLink to="/about">About us</NavLink>
+                <NavLink to="/about" className="header-font">About us</NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact" className="header-font">Contact</NavLink>
               </li>
           </ul>
             {/* Items in cart and Total. Appears on the top left */}
           <Cart items={props.items} className="shoppingCart" />
         </div>
-          </Jumbotron>
-
         </div>
       );
     }

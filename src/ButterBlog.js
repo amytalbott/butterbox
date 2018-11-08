@@ -30,17 +30,17 @@ class ButterBlog extends React.Component {
   render() {
     const posts = this.state.posts.map((post, index) => {
       return <div className="butterpost" key={index}>
-      <h3>{post.title.rendered}</h3>
+      <h3 className="header-font">{post.title.rendered}</h3>
       <div dangerouslySetInnerHTML={{__html: post.excerpt.rendered}} />
       <ReadMore
-        posts={this.state.posts}
+        post={post}
       />
       </div>
     });
 
     return (
       <div className="butterblog">
-        <h2 className="blogheader text-center">ButterBlog: the official blog of ButterBox</h2>
+        <h2 className="blogheader text-center header-font">ButterBlog: the official blog of ButterBox</h2>
         <div className="butterposts">
           {posts}
         </div>

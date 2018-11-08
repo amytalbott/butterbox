@@ -12,8 +12,8 @@ import Item from './Item';
   const Home = (props) => {
     return (
       <div className="homeContainer">
-        <p className="introParagraph text-center">Subscribe to our butter of the month club, or try one of our
-          a la carte butter offerings.</p>
+        <h3 className="introParagraph text-center header-font">Subscribe to our butter of the month club, or try one of our
+          a la carte butter offerings.</h3>
         <Grid>
           <Row className="show-grid">
             {/* Available items list */}
@@ -23,6 +23,7 @@ import Item from './Item';
                 name={item.name}
                 price={item.price}
                 index={index}
+                description={item.description}
                 changeAmount={props.handleItemChange}
                 currentAmount={item.currentAmount}
               />

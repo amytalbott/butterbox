@@ -10,7 +10,7 @@ const Counter = props => {
 
   return (
     <div className="counter">
-      <span className="counter-score">Amount in cart: {props.currentAmount}</span>
+      <span className="counter-score item-amount">Amount in cart: {props.currentAmount}</span>
       <div>
         <Button
           className="counter-action addButton"

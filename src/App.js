@@ -23,28 +23,32 @@ class App extends React.Component {
         name: "One-year subscription",
         price: 80,
         currentAmount: 0,
-        index: 1
+        index: 1,
+        description: "Get one pound of a delicious new butter shipped to your door each month. Comes in an insulated box."
       },
       {
         photo: six,
         name: "Six-month subscription",
         price: 40,
         currentAmount: 0,
-        index: 2
+        index: 2,
+        description: "Get one pound of a delicious new butter shipped to your door each month. Comes in an insulated box."
       },
       {
         photo: sample,
         name: "Butter sampler",
         price: 30,
         currentAmount: 0,
-        index: 3
+        index: 3,
+        description: "Try the best of ButterBox, committment-free. You'll get three four-ounce samples, shipped in an insulated box."
       },
       {
         photo: mystery,
         name: "Mystery flavor",
         price: 10,
         currentAmount: 0,
-        index: 4
+        index: 4,
+        description: "Butter adventurers, try a pound of an experimental new flavor. What is it? You won't know until you open it."
       },
     ]
   }
