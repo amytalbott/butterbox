@@ -16,7 +16,7 @@ class ButterBlog extends React.Component {
 
   // Pulls in posts from a WordPress blog
   componentDidMount() {
-  const dataURL = "http://35.225.190.122/index.php/wp-json/wp/v2/posts";
+  const dataURL = "http://35.232.245.118/index.php/wp-json/wp/v2/posts";
   fetch(dataURL)
     .then(res => res.json())
     .then(res => {
