@@ -55,8 +55,10 @@ code {
   align-items: center;
   justify-content: space-between;
   background-color: #424B54;
+}
 
-
+.navbar-link {
+  font-size: 1.5em;
 }
 
 .main-nav {
@@ -64,10 +66,6 @@ code {
   flex-direction: row;
 }
 
-.main-nav ul {
-  margin-top: none !important;
-  margin-bottom: none !important;
-}
 
 .main-nav li {
   list-style-type: none;
@@ -78,7 +76,6 @@ code {
 
 .main-nav a {
   color: white;
-
 }
 
 .main-nav .icon {
@@ -93,12 +90,14 @@ code {
 .totalItems{
   font-family: 'IBM Plex Serif', serif;
   color: white;
+  font-size: 1.5em;
 
 }
 
 .money {
   font-family: 'IBM Plex Serif', serif;
   color: white;
+  font-size: 1.5em;
 }
 
 /* Styles for product display home page */
@@ -252,7 +251,7 @@ code {
   }
 }
 /*  Hides menu options and displays the hamburger menu icon on smaller screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .main-nav a:not(.icon) {display: none;}
   .main-nav a.icon {
     float: right;

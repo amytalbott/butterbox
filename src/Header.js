@@ -24,13 +24,13 @@ const Header = (props) => {
               </li>
               {/* Menu options that appear on larger screens */}
               <li>
-                <NavLink to="/butterblog" className="header-font">ButterBlog</NavLink>
+                <NavLink to="/butterblog" className="navbar-link header-font">ButterBlog</NavLink>
               </li>
               <li>
-                <NavLink to="/about" className="header-font">About us</NavLink>
+                <NavLink to="/about" className="navbar-link header-font">About us</NavLink>
               </li>
               <li>
-                <NavLink to="/contact" className="header-font">Contact</NavLink>
+                <NavLink to="/contact" className="navbar-link header-font">Contact</NavLink>
               </li>
           </ul>
             {/* Items in cart and Total. Appears on the top left */}
