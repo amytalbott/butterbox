@@ -13,27 +13,17 @@ const About = () => {
           {/* This image needs to be resized */}
           <img className="aboutPhoto" src={about} alt="the ButterBox team"/>
           <div className="aboutText">
-            <p>Lorem ipsum dolor amet mixtape fashion axe tote bag readymade blue
-              bottle ethical DIY butcher. XOXO tilde quinoa mustache yr hammock echo
-              park chillwave actually brunch humblebrag. Venmo four loko lyft art
-              party quinoa, iPhone tilde taxidermy woke meggings pickled. VHS ethical
-              austin cronut art party. Williamsburg small batch single-origin coffee
-              sriracha four dollar toast.</p>
+            <p>We are a group of butter enthusiasts who teamed up to share our hobby
+            of creating small-batch flavored butters with subscribers.</p>
 
-            <p>Single-origin coffee gochujang listicle small batch viral la croix
-              distillery, messenger bag bitters microdosing synth pitchfork. Tumblr
-              blog farm-to-table, snackwave banh mi occupy vaporware keytar portland
-              wolf brunch narwhal. Vape DIY next level trust fund 3 wolf moon
-              biodiesel food truck wayfarers af knausgaard echo park gastropub brunch
-              man bun. Yuccie organic woke pop-up.</p>
+            <p>Our story began at a butter tasting party in a small kitchen, and grew
+            from there.</p>
 
-              <p>Lyft meditation meh enamel pin distillery swag la croix jianbing
-                poutine dreamcatcher tumblr biodiesel activated charcoal fam. Migas
-                ethical street art, intelligentsia letterpress iceland poutine fanny
-                pack four loko chia banh mi 3 wolf moon mumblecore aesthetic. Cray
-                banh mi live-edge readymade truffaut paleo. Viral chillwave brooklyn,
-                migas trust fund heirloom wayfarers before they sold out pickled.
-                3 wolf moon pug thundercats distillery VHS vinyl forage mixtape wayfarers.</p>
+            <p>To keep our love of butter strong, we go on monthly butter sourcing trips,
+            tasting the finest butters and flavorings that the world has to offer.</p>
+
+            <p>We hope you'll enjoy our product, and become part of our exclusive butter
+            community.</p>
             </div>
         </div>
     </div>
