@@ -40,12 +40,6 @@ code {
   text-decoration: none;
 }
 
-.fa {
-  /* Styles for hamburger menu icon */
-  background-color: white;
-  color: #424B54;
-}
-
 
 /* Styles for navbar */
 
@@ -59,6 +53,10 @@ code {
 
 .navbar-link {
   font-size: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  background-color: #424B54;
 }
 
 .main-nav {
@@ -244,30 +242,10 @@ code {
 }
 
 /* Media queries */
+
 /* Makes the site title larger on larger screens */
 @media only screen and (min-width: 700px) {
   .siteTitle {
     font-size: 4em;
   }
-}
-/*  Hides menu options and displays the hamburger menu icon on smaller screens */
-@media screen and (max-width: 600px) {
-  .main-nav a:not(.icon) {display: none;}
-  .main-nav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .main-nav.responsive {position: relative;}
-  .main-nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .main-nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
 }
