@@ -59,25 +59,19 @@ code {
   background-color: #424B54;
 }
 
+.navbar-link:hover {
+  color: #ffffb3;
+  font-size: 1.7em;
+  text-decoration: none;
+}
+
 .main-nav {
   display: flex;
   flex-direction: row;
 }
 
-
-.main-nav li {
-  list-style-type: none;
-  margin-left: 10px;
-  margin-right: 10px;
-
-}
-
-.main-nav a {
-  color: white;
-}
-
-.main-nav .icon {
-    display: none;
+.navbar-toggler {
+  background-color: white;
 }
 
 /* Styles for cart */

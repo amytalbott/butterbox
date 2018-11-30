@@ -1,5 +1,4 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
 
 
@@ -18,9 +17,8 @@ const Header = (props) => {
         <h1 className="siteTitle text-center">
           <NavLink to="/">ButterBox</NavLink>
         </h1>
-
         <div className="header-nav">
-          <Navigation />
+          <Navigation className="main-nav"/>
           {/* Items in cart and Total. Appears on the top left */}
           <Cart items={props.items} className="shoppingCart" />
         </div>
